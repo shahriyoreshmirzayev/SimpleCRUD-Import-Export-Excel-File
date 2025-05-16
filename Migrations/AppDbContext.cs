@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SImpleCRUD.DataAccess;
 using SImpleCRUD.DataAccess.Entities;
 
 namespace SImpleCRUD.Migrations
@@ -13,6 +14,7 @@ namespace SImpleCRUD.Migrations
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.GenerateSeed();
         }
     }
 }
